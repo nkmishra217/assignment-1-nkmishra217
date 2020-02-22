@@ -11,7 +11,12 @@ public class Person {
     private String emailId;
 
     //creating constructor
-
+    public Person(String firstName, String lastName, long phone, String emailId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phone = phone;
+        this.emailId = emailId;
+    }
 
     //creating getter and setter
 
