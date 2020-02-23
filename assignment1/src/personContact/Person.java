@@ -15,10 +15,10 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
+        //creating getter and setter
+
         this.emailId = emailId;
     }
-
-    //creating getter and setter
 
 
     public String getFirstName() {
