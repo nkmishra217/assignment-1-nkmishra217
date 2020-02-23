@@ -9,6 +9,9 @@ public class Node<E> {
         next = null;
     }
 
+    public Node(String f_name, String l_name, long phone, String email) {
+    }
+
     public E getData() {
         return data;
     }
