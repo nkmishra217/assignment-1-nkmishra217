@@ -1,14 +1,14 @@
 package adt;
 
+import personContact.Person;
 public interface ADTImplementation<E> {
     // creating a abstract method to add , delete, search, view and exit contacts
-    public void add(E f_name, E l_name, E phone, E email);
+    public void add(Person data);
 
-    public E delete();
+    void delete(Person data);
 
-    public E search();
+    Person search(String firstName);
 
     public void view();
 
-    public void exit();
 }

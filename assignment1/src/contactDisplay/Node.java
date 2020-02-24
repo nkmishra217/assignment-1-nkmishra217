@@ -1,23 +1,20 @@
 package contactDisplay;
 
+import personContact.Person;
 public class Node<E> {
-    private E data;
+    private Person value;
     private Node next;
 
-    public Node(E data) {
-        this.data = data;
-        next = null;
+    public Node(Person value) {
+        this.value = value;
     }
 
-    public Node(String f_name, String l_name, long phone, String email) {
+    public Person getValue() {
+        return value;
     }
 
-    public E getData() {
-        return data;
-    }
-
-    public void setData(E data) {
-        this.data = data;
+    public void setValue(Person value) {
+        this.value = value;
     }
 
     public Node getNext() {
@@ -27,4 +24,7 @@ public class Node<E> {
     public void setNext(Node next) {
         this.next = next;
     }
+
+
+
 }

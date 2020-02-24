@@ -1,17 +1,18 @@
 package personContact;
 
+import java.util.LinkedList;
 public class Person {
     // create firstname of string type
     private String firstName;
     // lastname of string type
     private String lastName;
     // phone number of long type
-    private long phone;
+    private LinkedList<String> phone;
     // email id of string type
     private String emailId;
 
     //creating constructor
-    public Person(String firstName, String lastName, long phone, String emailId) {
+    public Person(String firstName, String lastName, LinkedList<String> phone, String emailId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
@@ -37,11 +38,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public long getPhone() {
+    public LinkedList<String> getPhone() {
         return phone;
     }
 
-    public void setPhone(long phone) {
+    public void setPhone(LinkedList<String> phone) {
         this.phone = phone;
     }
 
